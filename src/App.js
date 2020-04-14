@@ -8,7 +8,7 @@ function App() {
   const splashScreen = localStorage.getItem("splash_screen");
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/">
           {splashScreen ? <Home /> : <SplashScreen />}
