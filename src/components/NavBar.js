@@ -23,7 +23,7 @@ export default function NavBar({ title }) {
         <IconButton
           onClick={handleDrawer}
           edge="start"
-          color="white"
+          color="primary"
           aria-label="menu"
         >
           <MenuIcon />
