@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/app-web-denuncia-aglomeracao-quarentena/static/css/main.b732bf66.chunk.css",
+    "main.js": "/app-web-denuncia-aglomeracao-quarentena/static/js/main.0fecaa4a.chunk.js",
+    "main.js.map": "/app-web-denuncia-aglomeracao-quarentena/static/js/main.0fecaa4a.chunk.js.map",
+    "runtime-main.js": "/app-web-denuncia-aglomeracao-quarentena/static/js/runtime-main.e350d2f6.js",
+    "runtime-main.js.map": "/app-web-denuncia-aglomeracao-quarentena/static/js/runtime-main.e350d2f6.js.map",
+    "static/js/2.e0f9d925.chunk.js": "/app-web-denuncia-aglomeracao-quarentena/static/js/2.e0f9d925.chunk.js",
+    "static/js/2.e0f9d925.chunk.js.map": "/app-web-denuncia-aglomeracao-quarentena/static/js/2.e0f9d925.chunk.js.map",
+    "index.html": "/app-web-denuncia-aglomeracao-quarentena/index.html",
+    "precache-manifest.4ad7bcbe4495c60437b8197e8f095949.js": "/app-web-denuncia-aglomeracao-quarentena/precache-manifest.4ad7bcbe4495c60437b8197e8f095949.js",
+    "service-worker.js": "/app-web-denuncia-aglomeracao-quarentena/service-worker.js",
+    "static/css/main.b732bf66.chunk.css.map": "/app-web-denuncia-aglomeracao-quarentena/static/css/main.b732bf66.chunk.css.map",
+    "static/js/2.e0f9d925.chunk.js.LICENSE.txt": "/app-web-denuncia-aglomeracao-quarentena/static/js/2.e0f9d925.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e350d2f6.js",
+    "static/js/2.e0f9d925.chunk.js",
+    "static/css/main.b732bf66.chunk.css",
+    "static/js/main.0fecaa4a.chunk.js"
+  ]
+}
