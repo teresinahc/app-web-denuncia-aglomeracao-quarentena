@@ -12,3 +12,5 @@ Ideias:
 - Acontecimento (festa, fila, etc).
 - A guarda municipal ao abrir o app verá onde tem as últimas denúncias e pode ir lá fechar com mais agilidade.
 - A denúncia poderia ser anônima.
+
+[Como contribuir](https://github.com/teresinahc/app-web-denuncia-aglomeracao-quarentena/blob/master/CONTRIBUTING.md)
