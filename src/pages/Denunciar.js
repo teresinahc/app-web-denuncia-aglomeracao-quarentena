@@ -30,18 +30,15 @@ export default function Denunciar() {
 
       <Form>
         <TextField
-          id="outlined-basic"
           label="Título (opcional)"
           variant="outlined"
         />
         <TextField
-          id="outlined-basic"
           label="Descrição (opcional)"
           variant="outlined"
         />
         <TextField id="outlined-basic" label="Endereço" variant="outlined" />
         <TextField
-          id="outlined-select-currency"
           select
           label="Categoria"
           value={categoria}

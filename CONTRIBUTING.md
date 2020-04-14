@@ -1,6 +1,6 @@
 # Como contribuir
 
-1. Para ter uma cópia da aplicação em sua máquina basta clonar o repositório com o comando: `git clone https://github.com/teresinahc/app-web-denuncia-aglomeracao-quarentena.git`
+1. Para ter uma cópia da aplicação em sua máquina basta clonar o repositório na branch `develop` com o comando: `git clone https://github.com/teresinahc/app-web-denuncia-aglomeracao-quarentena.git`
 
 2. Instale as dependências usando o comando: `yarn install`
 
