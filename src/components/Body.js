@@ -4,6 +4,8 @@ export const Body = styled.div`
   height: 100vh;
   width: 100vw;
 
+  font-family: "Roboto";
+
   background: #f8f8f8;
   background-image: url("./images/nuvem.png");
   background-repeat: no-repeat;
@@ -13,8 +15,6 @@ export const Body = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  max-width: 500px;
 
   #fab {
     position: absolute;
@@ -26,4 +26,8 @@ export const Body = styled.div`
       background-color: #ca3333;
     }
   }
+`;
+
+export const Red = styled.b`
+  color: #ef3535;
 `;

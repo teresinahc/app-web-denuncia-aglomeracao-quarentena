@@ -8,7 +8,7 @@ import DateFnsUtils from "@date-io/date-fns";
 import brLocale from "date-fns/locale/pt-BR";
 import PhotoCamera from "@material-ui/icons/PhotoCamera";
 
-export default function Denunciar() {
+export default function DenunciarPage() {
   const categorias = [
     { value: "Fe", label: "Festa" },
     { value: "Fi", label: "Fila" },

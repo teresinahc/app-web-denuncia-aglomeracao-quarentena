@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import { Red } from "./Body";
 
-export default function Denuncia({ hora, endereco, categoria }) {
+export default function Denuncia({ hora, endereco, categoria, onClick }) {
   return (
-    <Body>
+    <Body onClick={onClick}>
       <Hora>{hora}</Hora>
       <Box>
         <div>
@@ -30,7 +31,7 @@ const Body = styled.div`
 const Hora = styled.p`
   color: #c63737;
   font-size: 12px;
-  margin-right: 10px;
+  margin-right: 7px;
 `;
 
 const Box = styled.div`
@@ -52,8 +53,4 @@ const Box = styled.div`
   span {
     font-weight: normal;
   }
-`;
-
-const Red = styled.b`
-  color: #ef3535;
 `;

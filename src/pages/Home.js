@@ -8,13 +8,16 @@ import { Fab } from "@material-ui/core";
 import AddIcon from "@material-ui/icons/Add";
 import { useHistory } from "react-router-dom";
 
-export default function Home() {
+export default function HomePage() {
   let history = useHistory();
 
   function denunciar() {
     setTimeout(() => {
       history.push("/denunciar");
     }, 500);
+  }
+  function navigate(url) {
+    history.push(url);
   }
 
   return (
@@ -29,6 +32,7 @@ export default function Home() {
             hora="12:43 PM"
             endereco="Rua dos Bobos - 789"
             categoria="Festa"
+            onClick={() => navigate("/denuncia/" + 1478)}
           />
           <Denuncia
             hora="12:43 PM"
@@ -68,5 +72,5 @@ const Display = styled.div`
 `;
 
 const Denuncias = styled.div`
-  width: 97%;
+  width: 99%;
 `;

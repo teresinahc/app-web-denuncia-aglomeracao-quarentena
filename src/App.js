@@ -1,8 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SplashScreen from "./pages/Splash";
-import Home from "./pages/Home";
-import Denunciar from "./pages/Denunciar";
+import HomePage from "./pages/Home";
+import DenunciarPage from "./pages/Denunciar";
+import DenunciaPage from "./pages/Denuncia";
+import SobrePage from "./pages/Sobre";
 
 function App() {
   const splashScreen = localStorage.getItem("splash_screen");
@@ -11,11 +13,17 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/">
-          {splashScreen ? <Home /> : <SplashScreen />}
+          {splashScreen ? <HomePage /> : <SplashScreen />}
         </Route>
-        
+
         <Route exact path="/denunciar">
-          <Denunciar />
+          <DenunciarPage />
+        </Route>
+        <Route exact path="/denuncia/:id">
+          <DenunciaPage />
+        </Route>
+        <Route exact path="/sobre">
+          <SobrePage />
         </Route>
       </Switch>
     </Router>
