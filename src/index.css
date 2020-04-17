@@ -5,12 +5,15 @@ body {
   background-color: #fff5f5;
 }
 
+<<<<<<< HEAD
 /*
 *
 * React Material-UI
 *
 */
 
+=======
+>>>>>>> 3722d5ed93ccdf5d7af9369aa71ec25bb953e725
 .MuiPickersToolbar-toolbar {
   background-color: #ef3535 !important;
 }
