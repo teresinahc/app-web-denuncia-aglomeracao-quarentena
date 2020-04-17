@@ -31,13 +31,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-<<<<<<< HEAD
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-=======
-    "eject": "react-scripts eject"
->>>>>>> 3722d5ed93ccdf5d7af9369aa71ec25bb953e725
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -55,13 +51,8 @@
     ]
   },
   "devDependencies": {
-<<<<<<< HEAD
     "@types/react-router-dom": "^5.1.4",
     "@types/styled-components": "^5.1.0",
     "gh-pages": "^2.2.0"
-=======
-    "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.19.0"
->>>>>>> 3722d5ed93ccdf5d7af9369aa71ec25bb953e725
   }
 }
