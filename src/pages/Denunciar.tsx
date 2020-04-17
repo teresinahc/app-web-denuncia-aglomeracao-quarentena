@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import { Body } from "../components/Body";
 import NavBar from "../components/NavBar";
-import { TextField, MenuItem, IconButton, Button } from "@material-ui/core";
 import styled from "styled-components";
-import { MuiPickersUtilsProvider, DateTimePicker } from "@material-ui/pickers";
-import DateFnsUtils from "@date-io/date-fns";
-import brLocale from "date-fns/locale/pt-BR";
-import PhotoCamera from "@material-ui/icons/PhotoCamera";
 
 export default function DenunciarPage() {
   const categorias = [
@@ -16,20 +11,20 @@ export default function DenunciarPage() {
   const [categoria, setCategoria] = useState("");
   const [data, setData] = useState(Date.now());
 
-  function handleChange(e) {
+  // TODO: create function types
+  function handleChange(e: any) {
     setCategoria(e.target.value);
   }
 
-  function handleData(date) {
+  function handleData(date: any) {
     setData(date);
   }
 
   return (
     <Body>
       <NavBar title="Fazer denúncia" />
-
       <Form>
-        <TextField
+        {/* <TextField
           label="Título (opcional)"
           variant="outlined"
         />
@@ -50,8 +45,8 @@ export default function DenunciarPage() {
               {option.label}
             </MenuItem>
           ))}
-        </TextField>
-        <MuiPickersUtilsProvider utils={DateFnsUtils} locale={brLocale}>
+        </TextField> */}
+        {/* <MuiPickersUtilsProvider utils={DateFnsUtils} locale={brLocale}>
           <DateTimePicker
             inputVariant="outlined"
             label="Data e hora"
@@ -70,7 +65,7 @@ export default function DenunciarPage() {
             <PhotoCamera fontSize="large" />
           </IconButton>
         </Images>
-        <Button variant="contained">Adicionar denúncia</Button>
+        <Button variant="contained">Adicionar denúncia</Button> */}
       </Form>
     </Body>
   );

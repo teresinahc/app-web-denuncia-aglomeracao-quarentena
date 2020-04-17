@@ -33,11 +33,14 @@ const Context = styled.div`
   width: 90%;
 `;
 
-export function Topico({ children }) {
+type TopicoProps = {
+  children: React.ReactChild;
+};
+export const Topico: React.FC<TopicoProps> = ({ children }) => {
   return (
     <Context>
       <Bola />
       <Titulo>{children}</Titulo>
     </Context>
   );
-}
+};

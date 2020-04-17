@@ -8,7 +8,6 @@ export default function SobrePage() {
   return (
     <Body>
       <NavBar title="Sobre" />
-
       <Topico>Sobre o app</Topico>
       <Descricao>
         Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor
