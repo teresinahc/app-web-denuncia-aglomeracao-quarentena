@@ -15,18 +15,8 @@ export const Body = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  #fab {
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
-    background-color: #ef3535;
-
-    &:hover {
-      background-color: #ca3333;
-    }
-  }
 `;
+
 
 export const Red = styled.b`
   color: #ef3535;

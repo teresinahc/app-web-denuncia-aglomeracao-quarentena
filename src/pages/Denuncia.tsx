@@ -11,7 +11,6 @@ export default function DenunciaPage() {
   return (
     <Body>
       <NavBar title={"Denúncia #" + id} />
-
       <h1>Título | Sem título</h1>
       <Descricao>
         Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor
@@ -53,6 +52,9 @@ const Images = styled.div`
   gap: 40px;
 `;
 
+type ImageProps = {
+  src: string;
+};
 const Image = styled.div`
   height: 78px;
   width: 78px;
@@ -63,7 +65,7 @@ const Image = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 
-  ${(props) =>
+  ${(props: ImageProps) =>
     props.src &&
     css`
       background-image: url(${props.src});

@@ -41,4 +41,16 @@ body {
   color: #ef3535 !important;
 }
 
+.carousel {
+  width: 100vw !important;
+  height: 100vh !important;
+}
 
+.fab {
+  position: absolute !important;
+  bottom: 30px !important;
+
+  background-color: #EAD30B !important;
+
+  z-index: 1000 !important;
+}

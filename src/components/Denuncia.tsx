@@ -1,9 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import { Red } from "./Body";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-export default function Denuncia({ hora, endereco, categoria, onClick }) {
+type Props = {
+  hora: string;
+  endereco: string;
+  categoria: string;
+  onClick(event: React.MouseEvent<HTMLDivElement, MouseEvent>): void;
+};
+
+const Denuncia: React.FC<Props> = ({ hora, endereco, categoria, onClick }) => {
   return (
     <Body onClick={onClick}>
       <Hora>{hora}</Hora>
@@ -16,11 +24,13 @@ export default function Denuncia({ hora, endereco, categoria, onClick }) {
             Categoria: <Red>{categoria}</Red>
           </p>
         </div>
-        <ArrowForwardIosIcon />
+        <FontAwesomeIcon icon={faArrowRight} />
       </Box>
     </Body>
   );
-}
+};
+
+export default Denuncia;
 
 const Body = styled.div`
   display: flex;
