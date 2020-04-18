@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Red } from "./Body";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 type Props = {
   hora: string;
@@ -24,7 +24,7 @@ const Denuncia: React.FC<Props> = ({ hora, endereco, categoria, onClick }) => {
             Categoria: <Red>{categoria}</Red>
           </p>
         </div>
-        <FontAwesomeIcon icon={faArrowRight} />
+        <FontAwesomeIcon icon={faChevronRight} />
       </Box>
     </Body>
   );

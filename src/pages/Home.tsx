@@ -5,8 +5,9 @@ import { Topico } from "../components/Topico";
 import styled from "styled-components";
 import Denuncia from "../components/Denuncia";
 import { useHistory } from "react-router-dom";
+import FAB from "../components/FAB";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function HomePage() {
   let history = useHistory();
@@ -22,44 +23,46 @@ export default function HomePage() {
 
   return (
     <Body>
-      <NavBar title="Denúncias"/>
-        <Topico>HOJE</Topico>
-        <Display>
-          <hr />
-          <Denuncias>
-            <Denuncia
-              hora="12:43 PM"
-              endereco="Rua dos Bobos - 789"
-              categoria="Festa"
-              onClick={() => navigate("/denuncia/" + 1478)}
-            />
-            <Denuncia
-              hora="12:43 PM"
-              endereco="Rua dos Bobos - 789"
-              categoria="Festa"
-              onClick={() => navigate("/denuncia/" + 1478)}
-            />
-          </Denuncias>
-        </Display>
+      <NavBar title="Denúncias" />
+      <Topico>HOJE</Topico>
+      <Display>
+        <hr />
+        <Denuncias>
+          <Denuncia
+            hora="12:43 PM"
+            endereco="Rua dos Bobos - 789"
+            categoria="Festa"
+            onClick={() => navigate("/denuncia/" + 1478)}
+          />
+          <Denuncia
+            hora="12:43 PM"
+            endereco="Rua dos Bobos - 789"
+            categoria="Festa"
+            onClick={() => navigate("/denuncia/" + 1478)}
+          />
+        </Denuncias>
+      </Display>
 
-        <Topico>ONTEM</Topico>
-        <Display>
-          <hr />
-          <Denuncias>
-            <Denuncia
-              hora="12:43 PM"
-              endereco="Rua dos Bobos - 789"
-              categoria="Festa"
-              onClick={() => navigate("/denuncia/" + 1478)}
-            />
-            <Denuncia
-              hora="12:43 PM"
-              endereco="Rua dos Bobos - 789"
-              categoria="Festa"
-              onClick={() => navigate("/denuncia/" + 1478)}
-            />
-          </Denuncias>
-        </Display>
+      <Topico>ONTEM</Topico>
+      <Display>
+        <hr />
+        <Denuncias>
+          <Denuncia
+            hora="12:43 PM"
+            endereco="Rua dos Bobos - 789"
+            categoria="Festa"
+            onClick={() => navigate("/denuncia/" + 1478)}
+          />
+          <Denuncia
+            hora="12:43 PM"
+            endereco="Rua dos Bobos - 789"
+            categoria="Festa"
+            onClick={() => navigate("/denuncia/" + 1478)}
+          />
+        </Denuncias>
+      </Display>
+
+      <FAB icon={<FontAwesomeIcon icon={faChevronRight} />} />
     </Body>
   );
 }

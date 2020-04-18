@@ -5,27 +5,35 @@ import DenunciarPage from "./pages/Denunciar";
 import DenunciaPage from "./pages/Denuncia";
 import SobrePage from "./pages/Sobre";
 import SplashScreen from "./pages/Splash";
+import { ThemeProvider } from "styled-components";
+
+import GlobalStyle from "./styles/global";
+import light from "./styles/themes/light";
+
 function App() {
   const splashScreen = localStorage.getItem("splash_screen");
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
-      <Switch>
-        <Route exact path="/">
-          {splashScreen ? <HomePage /> : <SplashScreen />}
-        </Route>
+    <ThemeProvider theme={light}>
+      <GlobalStyle />
+      <Router basename={process.env.PUBLIC_URL}>
+        <Switch>
+          <Route exact path="/">
+            {splashScreen ? <HomePage /> : <SplashScreen />}
+          </Route>
 
-        <Route exact path="/denunciar">
-          <DenunciarPage />
-        </Route>
-        <Route exact path="/denuncia/:id">
-          <DenunciaPage />
-        </Route>
-        <Route exact path="/sobre">
-          <SobrePage />
-        </Route>
-      </Switch>
-    </Router>
+          <Route exact path="/denunciar">
+            <DenunciarPage />
+          </Route>
+          <Route exact path="/denuncia/:id">
+            <DenunciaPage />
+          </Route>
+          <Route exact path="/sobre">
+            <SobrePage />
+          </Route>
+        </Switch>
+      </Router>
+    </ThemeProvider>
   );
 }
 

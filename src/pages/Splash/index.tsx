@@ -2,13 +2,13 @@ import React from "react";
 import Carousel from "re-carousel";
 import IndicatorDots from "./dots";
 import { Screen, SplashBody } from "../../components/Splash";
-import Fab from "@material/react-fab";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 import corona from "./corona.png";
 import house from "./house.png";
 import splash1 from "./splash1.png";
+import FAB from "../../components/FAB";
 
 export default function SplashScreen() {
   return (
@@ -39,10 +39,9 @@ export default function SplashScreen() {
         </Screen>
       </Carousel>
 
-      <Fab
+      <FAB
         onClick={() => localStorage.setItem("splash_screen", "true")}
-        className="fab"
-        icon={<FontAwesomeIcon icon={faArrowRight} />}
+        icon={<FontAwesomeIcon icon={faChevronRight} />}
       />
     </SplashBody>
   );
