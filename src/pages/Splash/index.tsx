@@ -5,12 +5,17 @@ import { Screen, SplashBody } from "../../components/Splash";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-import corona from "./corona.png";
-import house from "./house.png";
-import splash1 from "./splash1.png";
+import corona from "./images/corona.png";
+import house from "./images/house.png";
+import splash1 from "./images/splash1.png";
 import FAB from "../../components/FAB";
 
-export default function SplashScreen() {
+function removeSplashScreen() {
+  localStorage.setItem("splash_screen", "true");
+  window.location.reload();
+}
+
+const SplashScreen: React.FC = () => {
   return (
     <SplashBody>
       <Carousel className="carousel" widgets={[IndicatorDots]}>
@@ -39,10 +44,11 @@ export default function SplashScreen() {
         </Screen>
       </Carousel>
 
-      <FAB
-        onClick={() => localStorage.setItem("splash_screen", "true")}
-        icon={<FontAwesomeIcon icon={faChevronRight} />}
-      />
+      <FAB secondary onClick={removeSplashScreen}>
+        <FontAwesomeIcon icon={faChevronRight} />
+      </FAB>
     </SplashBody>
   );
-}
+};
+
+export default SplashScreen;

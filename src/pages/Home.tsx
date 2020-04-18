@@ -7,7 +7,7 @@ import Denuncia from "../components/Denuncia";
 import { useHistory } from "react-router-dom";
 import FAB from "../components/FAB";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 export default function HomePage() {
   let history = useHistory();
@@ -59,10 +59,18 @@ export default function HomePage() {
             categoria="Festa"
             onClick={() => navigate("/denuncia/" + 1478)}
           />
+          <Denuncia
+            hora="12:43 PM"
+            endereco="Rua dos Bobos - 789"
+            categoria="Festa"
+            onClick={() => navigate("/denuncia/" + 1478)}
+          />
         </Denuncias>
       </Display>
 
-      <FAB icon={<FontAwesomeIcon icon={faChevronRight} />} />
+      <FAB onClick={denunciar}>
+        <FontAwesomeIcon icon={faPlus} />
+      </FAB>
     </Body>
   );
 }

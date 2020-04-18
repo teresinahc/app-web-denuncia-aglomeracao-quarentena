@@ -5,16 +5,21 @@ type Props = {
 };
 
 // TODO: hover, focus and active styles
-export const ActionButton = styled.button<Props>`
+export const FAB = styled.button<Props>`
   border-radius: 50%;
   width: 56px;
   height: 56px;
+  position: absolute;
+  z-index: 10000;
+  bottom: 50px;
+  right: 50px;
 
+  cursor: pointer;
   color: white;
 
   border: none;
-  box-shadow: -6px -6px 11px #ffffff, 6px 6px 11px #d3d3d3;
 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: ${(props) =>
     props.secondary
       ? props.theme.colors.secondary
@@ -24,3 +29,4 @@ export const ActionButton = styled.button<Props>`
     outline: none;
   }
 `;
+export default FAB;
