@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomePage from "./pages/Home";
+import DenunciarPage from "./pages/Denunciar";
 import DenunciaPage from "./pages/Denuncia";
 import SobrePage from "./pages/Sobre";
 import SplashScreen from "./pages/Splash";
@@ -18,9 +19,12 @@ function App() {
       <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/">
-            <HomePage />
+            {splashScreen ? <HomePage /> : <SplashScreen />}
           </Route>
 
+          <Route exact path="/denunciar">
+            <DenunciarPage />
+          </Route>
           <Route exact path="/denuncia/:id">
             <DenunciaPage />
           </Route>
