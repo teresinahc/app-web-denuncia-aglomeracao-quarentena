@@ -6,7 +6,6 @@ type Props = {
   title: string;
 };
 
-// TODO: make a drawer
 const NavBar: React.FC<Props> = ({ title }) => {
   return (
     <AppBar>
