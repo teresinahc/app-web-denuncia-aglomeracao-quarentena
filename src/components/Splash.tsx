@@ -1,11 +1,11 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 export const SplashBody = styled.div`
   background-color: #ef3535;
   height: 100vh;
   width: 100vw;
 
-  background-image: url("./images/splash1.png");
+  background-image: url('./images/splash1.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 50%;
@@ -13,11 +13,11 @@ export const SplashBody = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
+`
 
 type ScreenProps = {
-  bg: string;
-};
+  bg: string
+}
 export const Screen = styled.div`
   background-color: #ef3535;
   height: 80vh;
@@ -37,7 +37,7 @@ export const Screen = styled.div`
     `}
 
   h2 {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-size: 20px;
     font-weight: normal;
     color: white;
@@ -47,4 +47,4 @@ export const Screen = styled.div`
     margin: 20px;
     margin-top: 50px;
   }
-`;
+`

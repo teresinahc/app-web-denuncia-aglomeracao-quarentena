@@ -1,44 +1,28 @@
-import React from "react";
-import styled from "styled-components";
-import menubars from "./images/menubars.png";
+import React from 'react'
+import { AppBar, NavButton, AddButton } from './styles'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome, faPlus, faInfo } from '@fortawesome/free-solid-svg-icons'
 
 type Props = {
-  title: string;
-};
+  toggleTheme(): void
+}
 
-// TODO: make a drawer
-const NavBar: React.FC<Props> = ({ title }) => {
+const NavBar: React.FC<Props> = ({ toggleTheme }) => {
   return (
     <AppBar>
-      <MenuBars src={menubars} alt="Menu" />
-      <h3>{title}</h3>
+      <NavButton>
+        <FontAwesomeIcon icon={faHome} />
+      </NavButton>
+
+      <AddButton>
+        <FontAwesomeIcon icon={faPlus} />
+      </AddButton>
+
+      <NavButton>
+        <FontAwesomeIcon icon={faInfo} />
+      </NavButton>
     </AppBar>
-  );
-};
+  )
+}
 
-export default NavBar;
-
-const AppBar = styled.div`
-  width: 100%;
-  height: 64px;
-  background-color: #ef3535;
-  display: flex;
-  align-items: center;
-  box-shadow: -9px -9px 25px #ffffff, 9px 9px 17px #d3d3d3;
-  border-radius: 0px 0px 15px 15px;
-  margin-bottom: 20px;
-
-  h3 {
-    color: white;
-    font-family: "Roboto";
-    font-weight: normal;
-    font-size: 23px;
-  }
-`;
-
-const MenuBars = styled.img`
-  width: 36px;
-  height: 23px;
-  margin: 0 15px;
-  cursor: pointer;
-`;
+export default NavBar
