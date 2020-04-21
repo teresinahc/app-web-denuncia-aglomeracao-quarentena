@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Red } from './Body'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { Red } from '../styles/Body'
 
 type Props = {
   hora: string
@@ -32,7 +32,7 @@ export default Denuncia
 
 const Box = styled.div`
   background: #f8f8f8;
-  box-shadow: -4px -4px 9px #ffffff, 4px 4px 9px rgba(0, 0, 0, 0.2);
+  box-shadow: -4px -4px 7px #ffffff, 4px 4px 9px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
   width: 100%;
   padding: 10px;
@@ -55,5 +55,5 @@ const Box = styled.div`
 
 const Hora = styled.p`
   color: rgba(0, 0, 0, 0.28);
-  font-weight: normal!important;
+  font-weight: normal !important;
 `

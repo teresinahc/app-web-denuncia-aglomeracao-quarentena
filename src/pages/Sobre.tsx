@@ -1,11 +1,10 @@
 import React from 'react'
 import { Topico } from '../components/Topico'
-import { Body } from '../components/Body'
 import styled from 'styled-components'
 
 export default function SobrePage() {
   return (
-    <Body>
+    <>
       <Topico>Sobre o app</Topico>
       <Descricao>
         Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor
@@ -28,7 +27,7 @@ export default function SobrePage() {
         <br />
         Max Lima - Mobile/Back
       </Descricao>
-    </Body>
+    </>
   )
 }
 

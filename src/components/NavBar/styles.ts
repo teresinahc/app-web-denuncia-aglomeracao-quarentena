@@ -3,8 +3,10 @@ import styled from 'styled-components'
 export const AppBar = styled.div`
   width: 100%;
   height: 64px;
+
   position: fixed;
   bottom: 0;
+
   background-color: ${(props) => props.theme.colors.primary};
   border-radius: 15px 15px 0 0;
   box-shadow: 0px -1px 19px rgba(255, 0, 0, 0.25);

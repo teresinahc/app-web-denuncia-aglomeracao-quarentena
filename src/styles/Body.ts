@@ -1,10 +1,9 @@
 import styled from 'styled-components'
 
 export const Body = styled.div`
-  height: 100vh;
-  width: 100vw;
-
   font-family: 'Roboto';
+
+  overflow-y: scroll;
 
   background: #f8f8f8;
   background-image: url('./images/nuvem.png');
@@ -15,6 +14,9 @@ export const Body = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  margin-top: 30px;
+  margin-bottom: 64px;
 `
 
 export const Red = styled.b`

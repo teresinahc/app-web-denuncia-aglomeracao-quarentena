@@ -1,11 +1,11 @@
 import React from 'react'
-import { Body, Red } from '../components/Body'
 import styled, { css } from 'styled-components'
 import Mapa from '../components/Map'
+import { Red } from '../styles/Body'
 
 export default function DenunciaPage() {
   return (
-    <Body>
+    <>
       <h1>Título | Sem título</h1>
       <Descricao>
         Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor
@@ -31,7 +31,7 @@ export default function DenunciaPage() {
       </Info>
 
       <Mapa />
-    </Body>
+    </>
   )
 }
 
