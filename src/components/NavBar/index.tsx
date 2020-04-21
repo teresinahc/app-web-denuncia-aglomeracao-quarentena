@@ -10,7 +10,7 @@ type Props = {
 const NavBar: React.FC<Props> = ({ toggleTheme }) => {
   return (
     <AppBar>
-      <NavButton>
+      <NavButton active>
         <FontAwesomeIcon icon={faHome} />
       </NavButton>
 
