@@ -30,6 +30,16 @@ export const Curtain = styled.div<CurtainProps>`
     props.state &&
     css`
       top: 0;
+
+      ${DownButton} {
+        transform: rotate(180deg);
+      }
+
+      ${Stats} {
+        background: linear-gradient(113.6deg, #bc2b2b 5.28%, #e03333 92.96%);
+        box-shadow: -4px -4px 9px rgba(255, 255, 255, 0.2),
+          4px 4px 9px rgba(0, 0, 0, 0.2);
+      }
     `}
 `
 export const DownButton = styled.div`
@@ -46,7 +56,7 @@ export const DownButton = styled.div`
 
   position: absolute;
   top: 270px;
-  transition: 1s;
+  transition: 0.5s;
 `
 
 export const DisplayStats = styled.div`
@@ -65,9 +75,7 @@ export const Stats = styled.div`
   justify-content: center;
 
   color: white;
-  background: linear-gradient(113.6deg, #bc2b2b 5.28%, #e03333 92.96%);
-  box-shadow: -4px -4px 9px rgba(255, 255, 255, 0.2),
-    4px 4px 9px rgba(0, 0, 0, 0.2);
+  transition: 1.5s;
   border-radius: 15px;
 `
 
