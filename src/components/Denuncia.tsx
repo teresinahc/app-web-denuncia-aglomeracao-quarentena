@@ -21,7 +21,7 @@ const Denuncia: React.FC<Props> = ({ hora, endereco, categoria, onClick }) => {
         <p>
           Categoria: <Red>{categoria}</Red>
         </p>
-        <p>Enviada às {hora}</p>
+        <Hora>Enviada às {hora}</Hora>
       </div>
       <FontAwesomeIcon icon={faChevronRight} />
     </Box>
@@ -31,8 +31,8 @@ const Denuncia: React.FC<Props> = ({ hora, endereco, categoria, onClick }) => {
 export default Denuncia
 
 const Box = styled.div`
-  background: #ffffff;
-  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
+  background: #f8f8f8;
+  box-shadow: -4px -4px 9px #ffffff, 4px 4px 9px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   width: 100%;
   padding: 10px;
@@ -51,4 +51,9 @@ const Box = styled.div`
   span {
     font-weight: normal;
   }
+`
+
+const Hora = styled.p`
+  color: rgba(0, 0, 0, 0.28);
+  font-weight: normal!important;
 `
