@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/app-web-denuncia-aglomeracao-quarentena/static/css/main.b732bf66.chunk.css",
-    "main.js": "/app-web-denuncia-aglomeracao-quarentena/static/js/main.e17572f7.chunk.js",
-    "main.js.map": "/app-web-denuncia-aglomeracao-quarentena/static/js/main.e17572f7.chunk.js.map",
-    "runtime-main.js": "/app-web-denuncia-aglomeracao-quarentena/static/js/runtime-main.e350d2f6.js",
-    "runtime-main.js.map": "/app-web-denuncia-aglomeracao-quarentena/static/js/runtime-main.e350d2f6.js.map",
-    "static/css/2.b4a16772.chunk.css": "/app-web-denuncia-aglomeracao-quarentena/static/css/2.b4a16772.chunk.css",
-    "static/js/2.ada11b72.chunk.js": "/app-web-denuncia-aglomeracao-quarentena/static/js/2.ada11b72.chunk.js",
-    "static/js/2.ada11b72.chunk.js.map": "/app-web-denuncia-aglomeracao-quarentena/static/js/2.ada11b72.chunk.js.map",
+    "main.css": "/app-web-denuncia-aglomeracao-quarentena/static/css/main.a30085e4.chunk.css",
+    "main.js": "/app-web-denuncia-aglomeracao-quarentena/static/js/main.a08af400.chunk.js",
+    "main.js.map": "/app-web-denuncia-aglomeracao-quarentena/static/js/main.a08af400.chunk.js.map",
+    "runtime-main.js": "/app-web-denuncia-aglomeracao-quarentena/static/js/runtime-main.68da376f.js",
+    "runtime-main.js.map": "/app-web-denuncia-aglomeracao-quarentena/static/js/runtime-main.68da376f.js.map",
+    "static/css/2.75edc52f.chunk.css": "/app-web-denuncia-aglomeracao-quarentena/static/css/2.75edc52f.chunk.css",
+    "static/js/2.73e03a80.chunk.js": "/app-web-denuncia-aglomeracao-quarentena/static/js/2.73e03a80.chunk.js",
+    "static/js/2.73e03a80.chunk.js.map": "/app-web-denuncia-aglomeracao-quarentena/static/js/2.73e03a80.chunk.js.map",
     "index.html": "/app-web-denuncia-aglomeracao-quarentena/index.html",
-    "precache-manifest.6427293ca736d4fd3ae6205300e3bea3.js": "/app-web-denuncia-aglomeracao-quarentena/precache-manifest.6427293ca736d4fd3ae6205300e3bea3.js",
+    "precache-manifest.74321e721251a90b702ae648a639c980.js": "/app-web-denuncia-aglomeracao-quarentena/precache-manifest.74321e721251a90b702ae648a639c980.js",
     "service-worker.js": "/app-web-denuncia-aglomeracao-quarentena/service-worker.js",
-    "static/css/2.b4a16772.chunk.css.map": "/app-web-denuncia-aglomeracao-quarentena/static/css/2.b4a16772.chunk.css.map",
-    "static/css/main.b732bf66.chunk.css.map": "/app-web-denuncia-aglomeracao-quarentena/static/css/main.b732bf66.chunk.css.map",
-    "static/js/2.ada11b72.chunk.js.LICENSE.txt": "/app-web-denuncia-aglomeracao-quarentena/static/js/2.ada11b72.chunk.js.LICENSE.txt"
+    "static/css/2.75edc52f.chunk.css.map": "/app-web-denuncia-aglomeracao-quarentena/static/css/2.75edc52f.chunk.css.map",
+    "static/css/main.a30085e4.chunk.css.map": "/app-web-denuncia-aglomeracao-quarentena/static/css/main.a30085e4.chunk.css.map",
+    "static/js/2.73e03a80.chunk.js.LICENSE.txt": "/app-web-denuncia-aglomeracao-quarentena/static/js/2.73e03a80.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e350d2f6.js",
-    "static/css/2.b4a16772.chunk.css",
-    "static/js/2.ada11b72.chunk.js",
-    "static/css/main.b732bf66.chunk.css",
-    "static/js/main.e17572f7.chunk.js"
+    "static/js/runtime-main.68da376f.js",
+    "static/css/2.75edc52f.chunk.css",
+    "static/js/2.73e03a80.chunk.js",
+    "static/css/main.a30085e4.chunk.css",
+    "static/js/main.a08af400.chunk.js"
   ]
 }
