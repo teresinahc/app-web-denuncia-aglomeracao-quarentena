@@ -1,16 +1,11 @@
-import React from "react";
-import NavBar from "../components/NavBar";
-import { Body, Red } from "../components/Body";
-import styled, { css } from "styled-components";
-import { useParams } from "react-router-dom";
-import Mapa from "../components/Map";
+import React from 'react'
+import { Body, Red } from '../components/Body'
+import styled, { css } from 'styled-components'
+import Mapa from '../components/Map'
 
 export default function DenunciaPage() {
-  const { id } = useParams();
-
   return (
     <Body>
-      <NavBar title={"Denúncia #" + id} />
       <h1>Título | Sem título</h1>
       <Descricao>
         Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor
@@ -18,9 +13,9 @@ export default function DenunciaPage() {
       </Descricao>
 
       <Images>
-        <Image src={process.env.PUBLIC_URL + "/favicon.ico"} />
-        <Image src={process.env.PUBLIC_URL + "/logo192.png"} />
-        <Image src={process.env.PUBLIC_URL + "/logo192.png"} />
+        <Image src={process.env.PUBLIC_URL + '/favicon.ico'} />
+        <Image src={process.env.PUBLIC_URL + '/logo192.png'} />
+        <Image src={process.env.PUBLIC_URL + '/logo192.png'} />
       </Images>
 
       <Info>
@@ -37,24 +32,24 @@ export default function DenunciaPage() {
 
       <Mapa />
     </Body>
-  );
+  )
 }
 
 const Descricao = styled.p`
   width: 90%;
   font-size: 20px;
   color: #3e3e3e;
-`;
+`
 
 const Images = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
-`;
+`
 
 type ImageProps = {
-  src: string;
-};
+  src: string
+}
 const Image = styled.div`
   height: 78px;
   width: 78px;
@@ -70,7 +65,7 @@ const Image = styled.div`
     css`
       background-image: url(${props.src});
     `}
-`;
+`
 
 const Info = styled.div`
   width: 95%;
@@ -84,4 +79,4 @@ const Info = styled.div`
   span {
     font-weight: normal;
   }
-`;
+`

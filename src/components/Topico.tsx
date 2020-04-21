@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
 const Titulo = styled.h2`
   width: 85%;
   color: black;
 
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 500;
   font-size: 19px;
 
@@ -13,7 +13,7 @@ const Titulo = styled.h2`
   margin-top: 0;
 
   letter-spacing: 1.25px;
-`;
+`
 
 const Bola = styled.div`
   background: #ef3535;
@@ -24,23 +24,23 @@ const Bola = styled.div`
 
   margin-right: 10px;
   margin-left: -6px;
-`;
+`
 
 const Context = styled.div`
   display: flex;
 
   align-items: center;
   width: 90%;
-`;
+`
 
-type TopicoProps = {
-  children: React.ReactChild;
-};
+interface TopicoProps {
+  children: React.ReactChild
+}
 export const Topico: React.FC<TopicoProps> = ({ children }) => {
   return (
     <Context>
       <Bola />
       <Titulo>{children}</Titulo>
     </Context>
-  );
-};
+  )
+}

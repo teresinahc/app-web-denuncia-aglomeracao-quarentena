@@ -1,18 +1,18 @@
-import React from "react";
-import Carousel from "re-carousel";
-import IndicatorDots from "./dots";
-import { Screen, SplashBody } from "../../components/Splash";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import React from 'react'
+import Carousel from 're-carousel'
+import IndicatorDots from './dots'
+import { Screen, SplashBody } from '../../components/Splash'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
-import corona from "./images/corona.png";
-import house from "./images/house.png";
-import splash1 from "./images/splash1.png";
-import FAB from "../../components/FAB";
+import corona from './images/corona.png'
+import house from './images/house.png'
+import splash1 from './images/splash1.png'
+import FAB from '../../components/FAB'
 
 function removeSplashScreen() {
-  localStorage.setItem("splash_screen", "true");
-  window.location.reload();
+  localStorage.setItem('splash_screen', 'true')
+  window.location.reload()
 }
 
 const SplashScreen: React.FC = () => {
@@ -48,7 +48,7 @@ const SplashScreen: React.FC = () => {
         <FontAwesomeIcon icon={faChevronRight} />
       </FAB>
     </SplashBody>
-  );
-};
+  )
+}
 
-export default SplashScreen;
+export default SplashScreen
