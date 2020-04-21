@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const AppBar = styled.div`
   width: 100%;
@@ -22,11 +22,19 @@ export const AppBar = styled.div`
     font-size: 23px;
   }
 `
+type NavButtonProps = {
+  active?: boolean
+}
+export const NavButton = styled.button<NavButtonProps>`
+  background-color: ${(props) => props.theme.colors.primary};
+  ${(props) =>
+    props.active &&
+    css`
+      background-color: #d13030;
+      box-shadow: -4px -4px 9px rgba(255, 255, 255, 0.2),
+        4px 4px 9px rgba(0, 0, 0, 0.2);
+    `}
 
-export const NavButton = styled.button`
-  background-color: #d13030;
-  box-shadow: -4px -4px 9px rgba(255, 255, 255, 0.2),
-    4px 4px 9px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   border: none;
   cursor: pointer;
