@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const Box = styled.div`
-  background: #f8f8f8;
-  box-shadow: -4px -4px 7px #ffffff, 4px 4px 9px rgba(0, 0, 0, 0.15);
+  background: #fffdfd;
+  box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
   width: 90%;
   display: flex;

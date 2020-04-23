@@ -25,9 +25,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <StatsBar />
-      <Body>
-        <Router basename={process.env.PUBLIC_URL}>
-          <Switch>
+      <Router basename={process.env.PUBLIC_URL}>
+        <Switch>
+          <Body>
             <Route exact path="/">
               <HomePage />
             </Route>
@@ -38,10 +38,10 @@ function App() {
             <Route exact path="/sobre">
               <SobrePage />
             </Route>
-          </Switch>
-        </Router>
-      </Body>
-      <NavBar toggleTheme={toggleTheme} />
+          </Body>
+        </Switch>
+        <NavBar toggleTheme={toggleTheme} />
+      </Router>
     </ThemeProvider>
   )
 }

@@ -5,8 +5,8 @@ import { useHistory } from 'react-router-dom'
 
 const HomePage: React.FC = () => {
   const history = useHistory()
-  function navigate(url: string) {
-    history.push(url)
+  const navigate = (route: string) => {
+    history.push(route)
   }
 
   const arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]

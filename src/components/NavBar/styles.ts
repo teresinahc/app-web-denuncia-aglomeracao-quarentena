@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { NavLink } from 'react-router-dom'
 
 export const AppBar = styled.div`
   width: 100%;
@@ -21,34 +22,14 @@ export const AppBar = styled.div`
     font-weight: normal;
     font-size: 23px;
   }
-`
-type NavButtonProps = {
-  active?: boolean
-}
-export const NavButton = styled.button<NavButtonProps>`
-  background-color: ${(props) => props.theme.colors.primary};
-  ${(props) =>
-    props.active &&
-    css`
-      background-color: #d13030;
-      box-shadow: -4px -4px 9px rgba(255, 255, 255, 0.2),
-        4px 4px 9px rgba(0, 0, 0, 0.2);
-    `}
 
-  border-radius: 15px;
-  border: none;
-  cursor: pointer;
-
-  width: 40px;
-  height: 40px;
-
-  color: white;
-  font-size: 20px;
-
-  &:focus {
-    outline: none;
+  .active {
+    background-color: #d13030;
+    box-shadow: -4px -4px 9px rgba(255, 255, 255, 0.2),
+      4px 4px 9px rgba(0, 0, 0, 0.2);
   }
 `
+
 export const AddButton = styled.button`
   border-radius: 50%;
   border: none;
@@ -63,6 +44,28 @@ export const AddButton = styled.button`
   background: linear-gradient(320.19deg, #ddb218 14.02%, #ffd41d 84.82%);
   box-shadow: -4px -4px 9px rgba(255, 255, 255, 0.2),
     4px 4px 9px rgba(0, 0, 0, 0.2);
+
+  &:focus {
+    outline: none;
+  }
+`
+
+export const NavRouter = styled(NavLink)`
+  transition: 0.5s;
+  background-color: ${(props) => props.theme.colors.primary};
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+
+  width: 40px;
+  height: 40px;
+
+  color: white;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:focus {
     outline: none;

@@ -58,6 +58,7 @@ export const DownButton = styled.div`
   position: absolute;
   top: 270px;
   transition: 0.5s;
+  cursor: pointer;
 `
 
 export const DisplayStats = styled.div`
