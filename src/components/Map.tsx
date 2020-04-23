@@ -10,7 +10,7 @@ const Mapa: React.FC = () => (
     // eslint-disable-next-line react/style-prop-object
     style="mapbox://styles/sampaioleal/ck3to6z8w006c1cpgtxme2z23"
     containerStyle={{
-      height: 250,
+      height: 210,
       width: '90%',
       borderRadius: 15,
       marginTop: 10,

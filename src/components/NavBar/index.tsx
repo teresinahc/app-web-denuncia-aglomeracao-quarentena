@@ -7,20 +7,38 @@ type Props = {
   toggleTheme(): void
 }
 
-const NavBar: React.FC<Props> = ({ toggleTheme }) => (
-  <AppBar>
-    <NavButton active>
-      <FontAwesomeIcon icon={faHome} />
-    </NavButton>
-
-    <AddButton>
-      <FontAwesomeIcon icon={faPlus} />
-    </AddButton>
-
-    <NavButton>
-      <FontAwesomeIcon icon={faInfo} />
-    </NavButton>
-  </AppBar>
+const path = window.location.pathname.replace(
+  '/app-web-denuncia-aglomeracao-quarentena',
+  ''
 )
+
+function checkRoute(route: string) {
+  if (route === path) {
+    return true
+  } else {
+    return false
+  }
+}
+
+const NavBar: React.FC<Props> = ({ toggleTheme }) => {
+  const home = checkRoute('/')
+  const sobre = checkRoute('/sobre')
+
+  return (
+    <AppBar>
+      <NavButton active={home}>
+        <FontAwesomeIcon icon={faHome} />
+      </NavButton>
+
+      <AddButton>
+        <FontAwesomeIcon icon={faPlus} />
+      </AddButton>
+
+      <NavButton active={sobre}>
+        <FontAwesomeIcon icon={faInfo} />
+      </NavButton>
+    </AppBar>
+  )
+}
 
 export default NavBar
