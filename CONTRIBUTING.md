@@ -1,5 +1,7 @@
 # Como contribuir
 
+0. Entre no projeto do Figma para saber como será feita a interface: https://www.figma.com/file/rLJJxgg3pM2x0PTa4m27PE/Covid-Alerts
+
 1. Para ter uma cópia da aplicação em sua máquina basta clonar o repositório na branch `develop` com o comando: `git clone https://github.com/teresinahc/app-web-denuncia-aglomeracao-quarentena.git`
 
 2. Instale as dependências usando o comando: `yarn install`
