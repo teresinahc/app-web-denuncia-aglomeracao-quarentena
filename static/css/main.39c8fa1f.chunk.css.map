@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,UACE,qBAAuB,CACvB,sBACF","file":"main.39c8fa1f.chunk.css","sourcesContent":[".carousel {\n  width: 100vw !important;\n  height: 100vh !important;\n}\n"]}
