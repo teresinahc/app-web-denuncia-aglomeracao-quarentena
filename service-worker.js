@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/app-web-denuncia-aglomeracao-quarentena/precache-manifest.8c66427112a25e2992417afcc37eb43e.js"
+  "/app-web-denuncia-aglomeracao-quarentena/precache-manifest.17d39ab2880b6a52ecb3384770768d07.js"
 );
 
 self.addEventListener('message', (event) => {

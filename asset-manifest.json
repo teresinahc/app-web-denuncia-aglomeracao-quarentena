@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/app-web-denuncia-aglomeracao-quarentena/static/css/main.39c8fa1f.chunk.css",
-    "main.js": "/app-web-denuncia-aglomeracao-quarentena/static/js/main.626d8ab2.chunk.js",
-    "main.js.map": "/app-web-denuncia-aglomeracao-quarentena/static/js/main.626d8ab2.chunk.js.map",
+    "main.js": "/app-web-denuncia-aglomeracao-quarentena/static/js/main.125adbbf.chunk.js",
+    "main.js.map": "/app-web-denuncia-aglomeracao-quarentena/static/js/main.125adbbf.chunk.js.map",
     "runtime-main.js": "/app-web-denuncia-aglomeracao-quarentena/static/js/runtime-main.68da376f.js",
     "runtime-main.js.map": "/app-web-denuncia-aglomeracao-quarentena/static/js/runtime-main.68da376f.js.map",
     "static/css/2.75edc52f.chunk.css": "/app-web-denuncia-aglomeracao-quarentena/static/css/2.75edc52f.chunk.css",
-    "static/js/2.95dc7e9d.chunk.js": "/app-web-denuncia-aglomeracao-quarentena/static/js/2.95dc7e9d.chunk.js",
-    "static/js/2.95dc7e9d.chunk.js.map": "/app-web-denuncia-aglomeracao-quarentena/static/js/2.95dc7e9d.chunk.js.map",
+    "static/js/2.b6c18ca2.chunk.js": "/app-web-denuncia-aglomeracao-quarentena/static/js/2.b6c18ca2.chunk.js",
+    "static/js/2.b6c18ca2.chunk.js.map": "/app-web-denuncia-aglomeracao-quarentena/static/js/2.b6c18ca2.chunk.js.map",
     "index.html": "/app-web-denuncia-aglomeracao-quarentena/index.html",
-    "precache-manifest.8c66427112a25e2992417afcc37eb43e.js": "/app-web-denuncia-aglomeracao-quarentena/precache-manifest.8c66427112a25e2992417afcc37eb43e.js",
+    "precache-manifest.17d39ab2880b6a52ecb3384770768d07.js": "/app-web-denuncia-aglomeracao-quarentena/precache-manifest.17d39ab2880b6a52ecb3384770768d07.js",
     "service-worker.js": "/app-web-denuncia-aglomeracao-quarentena/service-worker.js",
     "static/css/2.75edc52f.chunk.css.map": "/app-web-denuncia-aglomeracao-quarentena/static/css/2.75edc52f.chunk.css.map",
     "static/css/main.39c8fa1f.chunk.css.map": "/app-web-denuncia-aglomeracao-quarentena/static/css/main.39c8fa1f.chunk.css.map",
-    "static/js/2.95dc7e9d.chunk.js.LICENSE.txt": "/app-web-denuncia-aglomeracao-quarentena/static/js/2.95dc7e9d.chunk.js.LICENSE.txt"
+    "static/js/2.b6c18ca2.chunk.js.LICENSE.txt": "/app-web-denuncia-aglomeracao-quarentena/static/js/2.b6c18ca2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.68da376f.js",
     "static/css/2.75edc52f.chunk.css",
-    "static/js/2.95dc7e9d.chunk.js",
+    "static/js/2.b6c18ca2.chunk.js",
     "static/css/main.39c8fa1f.chunk.css",
-    "static/js/main.626d8ab2.chunk.js"
+    "static/js/main.125adbbf.chunk.js"
   ]
 }
