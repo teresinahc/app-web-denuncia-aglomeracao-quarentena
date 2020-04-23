@@ -7,22 +7,20 @@ type Props = {
   toggleTheme(): void
 }
 
-const NavBar: React.FC<Props> = ({ toggleTheme }) => {
-  return (
-    <AppBar>
-      <NavButton active>
-        <FontAwesomeIcon icon={faHome} />
-      </NavButton>
+const NavBar: React.FC<Props> = ({ toggleTheme }) => (
+  <AppBar>
+    <NavButton active>
+      <FontAwesomeIcon icon={faHome} />
+    </NavButton>
 
-      <AddButton>
-        <FontAwesomeIcon icon={faPlus} />
-      </AddButton>
+    <AddButton>
+      <FontAwesomeIcon icon={faPlus} />
+    </AddButton>
 
-      <NavButton>
-        <FontAwesomeIcon icon={faInfo} />
-      </NavButton>
-    </AppBar>
-  )
-}
+    <NavButton>
+      <FontAwesomeIcon icon={faInfo} />
+    </NavButton>
+  </AppBar>
+)
 
 export default NavBar

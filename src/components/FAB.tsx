@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 type Props = {
-  secondary?: boolean;
-};
+  secondary?: boolean
+}
 
 // TODO: hover, focus and active styles
-export const FAB = styled.button<Props>`
+const FAB = styled.button<Props>`
   border-radius: 50%;
   width: 56px;
   height: 56px;
@@ -28,5 +28,5 @@ export const FAB = styled.button<Props>`
   &:focus {
     outline: none;
   }
-`;
-export default FAB;
+`
+export default FAB

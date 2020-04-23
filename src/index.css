@@ -1,49 +1,4 @@
-.MuiPickersToolbar-toolbar {
-  background-color: #ef3535 !important;
-}
-
-.MuiPickersDay-daySelected {
-  background-color: #ef3535 !important;
-}
-
-.MuiPickersClockPointer-pointer {
-  background-color: #ef3535 !important;
-}
-
-.MuiPickersClock-pin {
-  background-color: #ef3535 !important;
-}
-
-.MuiPickersClockPointer-thumb {
-  border: 14px solid #ef3535 !important;
-}
-
-.MuiPickersClockPointer-noPoint {
-  background-color: #ef3535 !important;
-}
-
-.MuiTypography-colorPrimary {
-  color: #ef3535 !important;
-}
-
-.MuiPickersYear-root:focus {
-  color: #ef3535 !important;
-}
-
-.MuiButton-textPrimary {
-  color: #ef3535 !important;
-}
-
 .carousel {
   width: 100vw !important;
   height: 100vh !important;
-}
-
-.fab {
-  position: absolute !important;
-  bottom: 30px !important;
-
-  background-color: #ead30b !important;
-
-  z-index: 1000 !important;
 }

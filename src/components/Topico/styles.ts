@@ -1,7 +1,6 @@
-import React from 'react'
 import styled from 'styled-components'
 
-const Titulo = styled.h2`
+export const Titulo = styled.h2`
   width: 85%;
   color: black;
 
@@ -15,7 +14,7 @@ const Titulo = styled.h2`
   letter-spacing: 1.25px;
 `
 
-const Bola = styled.div`
+export const Bola = styled.div`
   background: #ef3535;
 
   height: 20px;
@@ -26,21 +25,9 @@ const Bola = styled.div`
   margin-left: -6px;
 `
 
-const Context = styled.div`
+export const Context = styled.div`
   display: flex;
 
   align-items: center;
   width: 90%;
 `
-
-interface TopicoProps {
-  children: React.ReactChild
-}
-export const Topico: React.FC<TopicoProps> = ({ children }) => {
-  return (
-    <Context>
-      <Bola />
-      <Titulo>{children}</Titulo>
-    </Context>
-  )
-}

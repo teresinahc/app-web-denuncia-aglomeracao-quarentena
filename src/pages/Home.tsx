@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Denuncia from '../components/Denuncia'
 import { useHistory } from 'react-router-dom'
 
-export default function HomePage() {
+const HomePage: React.FC = () => {
   const history = useHistory()
   function navigate(url: string) {
     history.push(url)
@@ -28,6 +28,8 @@ export default function HomePage() {
     </Display>
   )
 }
+
+export default HomePage
 
 const Display = styled.div`
   width: 100%;

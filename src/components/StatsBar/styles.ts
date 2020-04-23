@@ -10,6 +10,7 @@ export const Curtain = styled.div<CurtainProps>`
   background: ${(props) => props.theme.colors.primary};
 
   position: absolute;
+  z-index: 10;
   top: -265px;
 
   border-radius: 0 0 15px 15px;

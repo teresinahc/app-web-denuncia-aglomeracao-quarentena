@@ -15,40 +15,37 @@ function removeSplashScreen() {
   window.location.reload()
 }
 
-const SplashScreen: React.FC = () => {
-  return (
-    <SplashBody>
-      <Carousel className="carousel" widgets={[IndicatorDots]}>
-        <Screen bg={splash1}>
-          <img height="200px" width="200px" src={corona} alt="Coronavirus" />
-          <h2>
-            A OMS (Organização Mundial de Saúde) declarou que o surto do novo
-            coronavírus constitui uma Emergência de Saúde Pública de Importância
-            Internacional.
-          </h2>
-        </Screen>
-        <Screen bg={splash1}>
-          <img height="200px" width="200px" src={house} alt="Fica em casa" />
-          <h2>
-            Ajude e denuncie aglomerações durante a quarentena devido ao
-            COVID-19.
-          </h2>
-        </Screen>
-        <Screen bg={splash1}>
-          <img height="200px" width="200px" src={corona} alt="Coronavirus" />
-          <h2>
-            A OMS (Organização Mundial de Saúde) declarou que o surto do novo
-            coronavírus constitui uma Emergência de Saúde Pública de Importância
-            Internacional.
-          </h2>
-        </Screen>
-      </Carousel>
+const SplashScreen: React.FC = () => (
+  <SplashBody>
+    <Carousel className="carousel" widgets={[IndicatorDots]}>
+      <Screen bg={splash1}>
+        <img height="200px" width="200px" src={corona} alt="Coronavirus" />
+        <h2>
+          A OMS (Organização Mundial de Saúde) declarou que o surto do novo
+          coronavírus constitui uma Emergência de Saúde Pública de Importância
+          Internacional.
+        </h2>
+      </Screen>
+      <Screen bg={splash1}>
+        <img height="200px" width="200px" src={house} alt="Fica em casa" />
+        <h2>
+          Ajude e denuncie aglomerações durante a quarentena devido ao COVID-19.
+        </h2>
+      </Screen>
+      <Screen bg={splash1}>
+        <img height="200px" width="200px" src={corona} alt="Coronavirus" />
+        <h2>
+          A OMS (Organização Mundial de Saúde) declarou que o surto do novo
+          coronavírus constitui uma Emergência de Saúde Pública de Importância
+          Internacional.
+        </h2>
+      </Screen>
+    </Carousel>
 
-      <FAB secondary onClick={removeSplashScreen}>
-        <FontAwesomeIcon icon={faChevronRight} />
-      </FAB>
-    </SplashBody>
-  )
-}
+    <FAB secondary onClick={removeSplashScreen}>
+      <FontAwesomeIcon icon={faChevronRight} />
+    </FAB>
+  </SplashBody>
+)
 
 export default SplashScreen
