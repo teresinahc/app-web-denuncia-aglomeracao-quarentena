@@ -4,16 +4,20 @@ import Denuncia from '../components/Denuncia'
 import { useHistory } from 'react-router-dom'
 import api from '../utils/api'
 // eslint-disable-next-line no-unused-vars
-import { Complaint } from '../utils/types'
+import { Complaint, StateInterface } from '../utils/types'
+import { observer } from 'mobx-react'
 
-const HomePage: React.FC = () => {
-  const [state, setState] = useState<Complaint[]>([])
+type Props = {
+  state: StateInterface
+}
+
+const HomePage: React.FC<Props> = ({ state }) => {
   const history = useHistory()
 
   useEffect(() => {
     api.get('/complaints').then((res) => {
       const complaints: Complaint[] = res.data
-      setState(complaints)
+      state.setDenuncias(complaints)
     })
   }, [])
 
@@ -21,11 +25,11 @@ const HomePage: React.FC = () => {
     <Display>
       <h2>#ficaemcasa - Denúncias</h2>
       {state &&
-        state.map((complaint, index) => {
+        state.denuncias.map((complaint: Complaint, index: number) => {
           return (
             <Denuncia
               key={index}
-              horario={complaint.date_time}
+              horario={complaint.createdAt}
               endereco={complaint.address}
               categoria={complaint.category}
               onClick={() => history.push('/denuncia/' + complaint.id)}
@@ -36,7 +40,7 @@ const HomePage: React.FC = () => {
   )
 }
 
-export default HomePage
+export default observer(HomePage)
 
 const Display = styled.div`
   width: 100%;

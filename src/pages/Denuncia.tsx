@@ -2,36 +2,58 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 import Mapa from '../components/Map'
 import { Red } from '../styles/Body'
+// eslint-disable-next-line no-unused-vars
+import { StateInterface } from '../utils/types'
+import { useParams, Redirect } from 'react-router-dom'
 
-const DenunciaPage: React.FC = () => (
-  <>
-    <Title>Título | Sem título</Title>
-    <Descricao>
-      Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor
-      sit amet
-    </Descricao>
+type Props = {
+  state: StateInterface
+}
+const DenunciaPage: React.FC<Props> = ({ state }) => {
+  const { id } = useParams()
+  const denuncia = state.denuncias.filter((item) => {
+    if (id && parseInt(id) === item.id) return item
+  })[0]
 
-    <Images>
-      <Image src={process.env.PUBLIC_URL + '/favicon.ico'} />
-      <Image src={process.env.PUBLIC_URL + '/logo192.png'} />
-      <Image src={process.env.PUBLIC_URL + '/logo192.png'} />
-    </Images>
+  if (!denuncia) {
+    return <Redirect to="/" />
+  } else {
+    const date = new Date(denuncia.date_time)
+    const hora = date.getHours() + ':' + date.getMinutes()
+    const dia =
+      date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear()
 
-    <Info>
-      <p>
-        Endereço: <span>Rua do Bobo - 789</span>
-      </p>
-      <p>
-        Categoria: <Red>Festa</Red>
-      </p>
-      <p>
-        Horário: <span>12:43 - 15/04/2020</span>
-      </p>
-    </Info>
+    return (
+      <>
+        <Title>{denuncia.title ? denuncia.title : 'Sem Título'}</Title>
+        <Descricao>{denuncia.description}</Descricao>
 
-    <Mapa />
-  </>
-)
+        <Images>
+          <Image src={process.env.PUBLIC_URL + '/favicon.ico'} />
+          <Image src={process.env.PUBLIC_URL + '/logo192.png'} />
+          <Image src={process.env.PUBLIC_URL + '/logo192.png'} />
+        </Images>
+
+        <Info>
+          <p>
+            Endereço: <span>{denuncia.address}</span>
+          </p>
+          <p>
+            Categoria: <Red>{denuncia.category}</Red>
+          </p>
+          <p>
+            Horário:{' '}
+            <span>
+              {hora}h do dia {dia}
+            </span>
+          </p>
+        </Info>
+
+        <Mapa lat={denuncia.lat} long={denuncia.long} />
+      </>
+    )
+  }
+}
 
 export default DenunciaPage
 

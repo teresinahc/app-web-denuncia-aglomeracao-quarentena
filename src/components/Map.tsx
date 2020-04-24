@@ -5,10 +5,15 @@ const Map = ReactMapboxGl({
   accessToken: process.env.REACT_APP_MAPBOX_ACCESS_TOKEN!
 })
 
-const Mapa: React.FC = () => (
+type Props = {
+  lat: string
+  long: string
+}
+const Mapa: React.FC<Props> = ({ lat, long }) => (
   <Map
     // eslint-disable-next-line react/style-prop-object
     style="mapbox://styles/sampaioleal/ck3to6z8w006c1cpgtxme2z23"
+    center={[parseFloat(lat), parseFloat(long)]}
     containerStyle={{
       height: 210,
       width: '90%',
@@ -18,5 +23,5 @@ const Mapa: React.FC = () => (
     }}
   ></Map>
 )
-
+// TODO: add marker
 export default Mapa

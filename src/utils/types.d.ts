@@ -4,8 +4,14 @@ export interface Complaint {
   date_time: string
   address: string
   lat: string
-  lon: string
+  long: string
   completed: boolean
   category: string
   createdAt: string
+  title: string
+}
+
+export interface StateInterface {
+  denuncias: Complaint[]
+  setDenuncias(array: Complaint[]): void
 }
