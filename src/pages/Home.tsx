@@ -1,30 +1,37 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Denuncia from '../components/Denuncia'
 import { useHistory } from 'react-router-dom'
+import api from '../utils/api'
+// eslint-disable-next-line no-unused-vars
+import { Complaint } from '../utils/types'
 
 const HomePage: React.FC = () => {
+  const [state, setState] = useState<Complaint[]>([])
   const history = useHistory()
-  const navigate = (route: string) => {
-    history.push(route)
-  }
 
-  const arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  useEffect(() => {
+    api.get('/complaints').then((res) => {
+      const complaints: Complaint[] = res.data
+      setState(complaints)
+    })
+  }, [])
 
   return (
     <Display>
       <h2>#ficaemcasa - Denúncias</h2>
-      {arr.map((i, j) => {
-        return (
-          <Denuncia
-            key={j}
-            hora="12:43 PM"
-            endereco="Rua dos Bobos - 789"
-            categoria="Festa"
-            onClick={() => navigate('/denuncia/' + 1478)}
-          />
-        )
-      })}
+      {state &&
+        state.map((complaint, index) => {
+          return (
+            <Denuncia
+              key={index}
+              horario={complaint.date_time}
+              endereco={complaint.address}
+              categoria={complaint.category}
+              onClick={() => history.push('/denuncia/' + complaint.id)}
+            />
+          )
+        })}
     </Display>
   )
 }
