@@ -13,6 +13,8 @@ import light from './styles/themes/light'
 import dark from './styles/themes/dark'
 import { Body } from './styles/Body'
 import StatsBar from './components/StatsBar'
+import State from './utils/state'
+import Modal from './components/Modal'
 
 function App() {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light)
@@ -20,6 +22,8 @@ function App() {
   function toggleTheme() {
     setTheme(theme.title === 'light' ? dark : light)
   }
+
+  const state = new State()
 
   return (
     <ThemeProvider theme={theme}>
@@ -29,19 +33,21 @@ function App() {
         <Switch>
           <Body>
             <Route exact path="/">
-              <HomePage />
+              <HomePage state={state} />
             </Route>
 
             <Route exact path="/denuncia/:id">
-              <DenunciaPage />
+              <DenunciaPage state={state} />
             </Route>
             <Route exact path="/sobre">
               <SobrePage />
             </Route>
           </Body>
         </Switch>
-        <NavBar toggleTheme={toggleTheme} />
+        <NavBar state={state} toggleTheme={toggleTheme} />
       </Router>
+
+      <Modal state={state} />
     </ThemeProvider>
   )
 }

@@ -37,4 +37,5 @@ const Descricao = styled.p`
   color: #6F6F6F;
   font-size: 16px;
   font-family: 'Roboto';
+
 `
