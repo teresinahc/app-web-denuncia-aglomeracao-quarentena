@@ -14,6 +14,7 @@ import dark from './styles/themes/dark'
 import { Body } from './styles/Body'
 import StatsBar from './components/StatsBar'
 import State from './utils/state'
+import Modal from './components/Modal'
 
 function App() {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light)
@@ -43,8 +44,10 @@ function App() {
             </Route>
           </Body>
         </Switch>
-        <NavBar toggleTheme={toggleTheme} />
+        <NavBar state={state} toggleTheme={toggleTheme} />
       </Router>
+
+      <Modal state={state} />
     </ThemeProvider>
   )
 }

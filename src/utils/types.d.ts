@@ -14,4 +14,7 @@ export interface Complaint {
 export interface StateInterface {
   denuncias: Complaint[]
   setDenuncias(array: Complaint[]): void
+
+  modal: boolean
+  toggleModal(): void
 }
