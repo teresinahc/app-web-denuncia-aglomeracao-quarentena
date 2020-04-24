@@ -30,4 +30,5 @@ export const Context = styled.div`
 
   align-items: center;
   width: 90%;
+  margin-top: 56px;
 `

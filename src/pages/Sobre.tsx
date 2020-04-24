@@ -33,4 +33,8 @@ export default SobrePage
 
 const Descricao = styled.p`
   width: 90%;
+  margin-top: 21px;
+  color: #6F6F6F;
+  font-size: 16px;
+  line-height: 23px;
 `
