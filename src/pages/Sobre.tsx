@@ -11,7 +11,7 @@ const SobrePage: React.FC = () => (
       dolor sit amet
     </Descricao>
 
-    <Topico>Quem somos</Topico>
+    <Topico>Fonte de dados</Topico>
     <Descricao>
       Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor
       sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
@@ -36,5 +36,5 @@ const Descricao = styled.p`
   margin-top: 21px;
   color: #6F6F6F;
   font-size: 16px;
-  line-height: 23px;
+  font-family: 'Roboto';
 `
