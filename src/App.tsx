@@ -29,7 +29,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <StatsBar />
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Switch>
           <Body>
             <Route exact path="/">

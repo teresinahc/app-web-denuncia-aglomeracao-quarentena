@@ -2,7 +2,7 @@
   "name": "ficaemcasa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://teresinahc.github.io/app-web-denuncia-aglomeracao-quarentena/",
+  "repository": "https://teresinahc.github.io/app-web-denuncia-aglomeracao-quarentena/",
   "dependencies": {
     "@date-io/date-fns": "^2.6.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.28",

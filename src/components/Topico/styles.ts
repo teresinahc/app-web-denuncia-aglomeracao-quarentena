@@ -10,8 +10,6 @@ export const Titulo = styled.h2`
 
   margin-bottom: 0;
   margin-top: 0;
-
-  letter-spacing: 1.25px;
 `
 
 export const Bola = styled.div`
@@ -23,8 +21,7 @@ export const Bola = styled.div`
 
   margin-right: 10px;
   margin-left: -6px;
-  box-shadow: 0px 0px 20px;
-  rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 `
 
 export const Context = styled.div`
@@ -33,5 +30,4 @@ export const Context = styled.div`
   align-items: center;
   width: 90%;
   margin-top: 24px;
-
 `
