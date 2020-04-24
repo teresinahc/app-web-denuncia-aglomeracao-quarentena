@@ -2,7 +2,7 @@
 
 A ideia é construir um app web para denúncia de aglomerações durante a quarentena devido ao COVID-19.
 
-Ideias:
+## Ideias 💡
 
 - Você denuncia colocando informações de onde está acontecendo a aglomeração e ao tempo que você denuncia isso vai para uma timeline onde expõe várias aglomerações.
 - As informações podem ser:
@@ -13,4 +13,8 @@ Ideias:
 - A guarda municipal ao abrir o app verá onde tem as últimas denúncias e pode ir lá fechar com mais agilidade.
 - A denúncia poderia ser anônima.
 
-[Como contribuir](https://github.com/teresinahc/app-web-denuncia-aglomeracao-quarentena/blob/master/CONTRIBUTING.md)
+## Como contribuir 🤗
+
+Para contribuir com o projeto basta seguir as instruções no guia [CONTRIBUTING](https://github.com/teresinahc/app-web-denuncia-aglomeracao-quarentena/blob/master/CONTRIBUTING.md)
+
+
