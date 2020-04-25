@@ -30,7 +30,8 @@ const DenunciaPage: React.FC<Props> = ({ state }) => {
     console.log(denuncia)
     return (
       <>
-        <Title>{denuncia.title || 'Sem Título'}</Title>
+        {/* <Title>{denuncia.title || 'Sem Título'}</Title> */}
+        <Title>Sem Título</Title>
         <Descricao>{denuncia.description}</Descricao>
 
         <Images>
