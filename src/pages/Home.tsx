@@ -19,6 +19,7 @@ const HomePage: React.FC<Props> = ({ state }) => {
       const complaints: Complaint[] = res.data
       state.setDenuncias(complaints)
     })
+    // eslint-disable-next-line
   }, [])
 
   return (

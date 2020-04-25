@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import Mapa from '../components/Map'
+// import Mapa from '../components/Map'
 import { Red } from '../styles/Body'
 // eslint-disable-next-line no-unused-vars
 import { StateInterface } from '../utils/types'
@@ -12,7 +12,11 @@ type Props = {
 const DenunciaPage: React.FC<Props> = ({ state }) => {
   const { id } = useParams()
   const denuncia = state.denuncias.filter((item) => {
-    if (id && parseInt(id) === item.id) return item
+    if (id && parseInt(id) === item.id) {
+      return item
+    } else {
+      return null
+    }
   })[0]
 
   if (!denuncia) {
@@ -23,9 +27,10 @@ const DenunciaPage: React.FC<Props> = ({ state }) => {
     const dia =
       date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear()
 
+    console.log(denuncia)
     return (
       <>
-        <Title>{denuncia.title ? denuncia.title : 'Sem Título'}</Title>
+        <Title>{denuncia.title || 'Sem Título'}</Title>
         <Descricao>{denuncia.description}</Descricao>
 
         <Images>
@@ -49,7 +54,7 @@ const DenunciaPage: React.FC<Props> = ({ state }) => {
           </p>
         </Info>
 
-        <Mapa lat={denuncia.lat} long={denuncia.long} />
+        {/* <Mapa lat={denuncia.lat} long={denuncia.long} /> */}
       </>
     )
   }

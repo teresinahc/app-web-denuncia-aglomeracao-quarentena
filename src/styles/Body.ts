@@ -4,7 +4,7 @@ export const Body = styled.div`
   font-family: 'Roboto';
 
   background: #f8f8f8;
-  background-image: url('./images/nuvem.png');
+  background-image: url('/images/nuvem.png');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center 80%;

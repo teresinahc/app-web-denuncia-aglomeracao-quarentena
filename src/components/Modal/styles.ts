@@ -6,6 +6,25 @@ export const ModalBox = styled.div`
   border-radius: 15px;
   width: 85%;
   min-height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px;
+
+  h2 {
+    margin-bottom: 6px;
+    width: 90%;
+    font-weight: normal;
+    color: ${(props) => props.theme.colors.primary};
+  }
+
+  hr {
+    width: 90%;
+    border: solid 0.5px #d6d6d6;
+    margin: 10px 0;
+  }
 `
 
 export const Container = styled.div`

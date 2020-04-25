@@ -22,6 +22,6 @@ module.exports = {
     'no-unused-vars': [1],
     'space-before-function-paren': [0],
     'react/prop-types': [0],
-    camelcase: [0]
+    camelcase: [0],
   }
 }
